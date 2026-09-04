@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:url(inter/extras/ttf/Inter-Regular.ttf);font-weight:400}
+@font-face{font-family:Inter;src:url(inter/extras/ttf/Inter-Medium.ttf);font-weight:500}
+@font-face{font-family:Inter;src:url(inter/extras/ttf/Inter-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Inter;src:url(inter/extras/ttf/Inter-Bold.ttf);font-weight:700}
+*{box-sizing:border-box;margin:0}
+body{width:1280px;height:640px;background:#fff;font-family:Inter,system-ui,sans-serif;color:#111;-webkit-font-smoothing:antialiased}
+.card{display:grid;grid-template-columns:380px 1fr;gap:56px;padding:56px 72px 48px;height:640px}
+.house{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-content:center;padding-top:8px}
+.value,.spec{height:52px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:13px;letter-spacing:.12em}
+.value{border:3px solid #111;background:#fff;color:#111;height:60px;margin-bottom:6px}
+.spec{background:#111;color:#fff}
+.spec.ghost{background:#fff;border:2px dashed #cfcfcf;color:#9a9a9a}
+.house .cap{grid-column:1/-1;margin-top:18px;font-size:13px;color:#777;line-height:1.45}
+.copy{display:flex;flex-direction:column}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.18em;color:#777;margin-bottom:18px}
+h1{font-size:48px;line-height:1.08;font-weight:700;letter-spacing:-.02em;margin-bottom:26px}
+ol{list-style:none;counter-reset:s;display:grid;gap:10px;border-top:1px solid #e6e6e6;padding-top:22px;margin-bottom:auto}
+li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;align-items:baseline;font-size:22px;font-weight:500;line-height:1.25}
+li::before{content:counter(s);font-size:15px;font-weight:600;color:#9a9a9a}
+li em{font-style:normal;color:#777;font-weight:400}
+.foot{display:flex;justify-content:space-between;font-size:15px;color:#777;margin-top:20px}
+.foot b{color:#111;font-weight:600}
+</style></head><body>
+<div class="card">
+  <div class="house">
+    <div class="value">VALUE</div><div class="value">VALUE</div><div class="value">VALUE</div><div class="value">VALUE</div>
+    <div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div>
+    <div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div>
+    <div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div>
+    <div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div><div class="spec">SPEC</div>
+    <div class="cap">The house: four reasons across the top, every spec beneath the one it proves. One document the whole team argues about instead of arguing about sentences.</div>
+  </div>
+  <div class="copy">
+    <div class="eyebrow">MESSAGING HOUSE</div>
+    <h1>Four reasons to buy.<br>Every feature underneath<br>the one it proves.</h1>
+    <ol>
+      <li><span>Start with one real customer, not a segment</span></li>
+      <li><span>Map their jobs, pains and gains</span></li>
+      <li><span>Find the four reasons they buy</span></li>
+      <li><span>Stack every spec under the reason it proves</span></li>
+      <li><span>Write the value proposition and the homepage</span></li>
+    </ol>
+    <div class="foot"><span>A free Claude skill by <b>Casey Milone</b></span><span>github.com/GenCasey/messaging-house</span></div>
+  </div>
+</div>
+</body></html>
