@@ -1,0 +1,22 @@
+{
+  "name": "gencasey",
+  "owner": {
+    "name": "Casey Milone",
+    "url": "https://caseymilone.com"
+  },
+  "plugins": [
+    {
+      "name": "messaging-house",
+      "source": "./",
+      "description": "Turn any product, app or service into value-based messaging and finished copy: one real customer, jobs to be done, four why-buys, a messaging house, a value proposition, and a four-blade homepage.",
+      "version": "1.0.0",
+      "author": { "name": "Casey Milone", "url": "https://caseymilone.com" },
+      "homepage": "https://github.com/GenCasey/messaging-house",
+      "repository": "https://github.com/GenCasey/messaging-house",
+      "license": "MIT",
+      "keywords": ["marketing", "positioning", "messaging", "value-proposition", "jobs-to-be-done", "copywriting", "product-marketing", "startup"],
+      "category": "marketing",
+      "displayName": "Messaging House"
+    }
+  ]
+}
