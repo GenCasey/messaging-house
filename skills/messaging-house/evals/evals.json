@@ -1,0 +1,54 @@
+{
+  "skill_name": "messaging-house",
+  "evals": [
+    {
+      "id": 0,
+      "name": "meal-app-landing",
+      "prompt": "I'm building a meal-planning app called Pantry. It looks at what's in your fridge (you photograph your groceries or scan receipts), suggests dinners for the week from what you already have, builds a shopping list for the gaps, and reminds you what's about to go off. Free with ads, or $6/month without. We're launching a landing page and I don't really know how to talk about it beyond listing the features. Users so far are mostly people in their 30s with kids who say they hate deciding what's for dinner. Can you help me figure out the messaging and write the landing page?",
+      "expected_output": "Explains or applies jobs-to-be-done, picks one real customer from the description, derives why-buys, produces messaging-house.md and a four-blade landing page derived from it. States assumptions where inputs are thin.",
+      "assertions": [
+        "Output includes a customer profile with separate ranked lists of jobs, pains and gains for one real or composite named customer",
+        "Output includes a value map that pairs profile items with how the product answers them and rates fit",
+        "Three or four why-buys are named as customer outcomes in plain words, not as technologies or feature names",
+        "Every feature or fact supplied in the prompt appears in the messaging document under a why-buy or in a parking lot; none is dropped",
+        "No feature, number, integration or behaviour is claimed beyond what the prompt supplies (placeholders and stated assumptions are acceptable; extending a feature's behaviour is not)",
+        "A value proposition of four to five sentences is present that names the product exactly once and ends on an emotional outcome",
+        "The chat summary opens with the why-buys and the value proposition before any process or assumption note",
+        "The landing page copy is structured as an intro (the value proposition) followed by one section per why-buy, with feature lines traceable to the messaging document"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "esign-api-positioning",
+      "prompt": "We sell Sealed, an e-signature API for software companies that want signing inside their own product instead of sending users to DocuSign. Facts: REST API and SDKs for Node, Python and Ruby; embedded signing UI that can be white-labelled; templates with merge fields; webhooks for every event; audit trail with tamper-evident hashes; SOC 2 Type II and eIDAS advanced signatures; sandbox with unlimited test envelopes; pricing is $0.40 per completed envelope with no platform fee; median time to first signed document in sandbox is 22 minutes. Buyers are CTOs or founding engineers at vertical SaaS companies (property management, HR, lending) who currently either link out to DocuSign or have built a fragile in-house signer. Give us positioning we can use across the developer docs homepage, the pricing page and outbound emails, and keep everything consistent.",
+      "expected_output": "Messaging house for a developer product with why-buys as engineer/founder outcomes, docs homepage copy, pricing page framing, and a short outbound email set, all traceable to the house.",
+      "assertions": [
+        "Output includes a customer profile with separate ranked lists of jobs, pains and gains for one real or composite named customer",
+        "Output includes a value map that pairs profile items with how the product answers them and rates fit",
+        "Three or four why-buys are named as customer outcomes in plain words, not as technologies or feature names",
+        "Every feature or fact supplied in the prompt appears in the messaging document under a why-buy or in a parking lot; none is dropped",
+        "No feature, number, integration or behaviour is claimed beyond what the prompt supplies (placeholders and stated assumptions are acceptable; extending a feature's behaviour is not)",
+        "A value proposition of four to five sentences is present that names the product exactly once and ends on an emotional outcome",
+        "The chat summary opens with the why-buys and the value proposition before any process or assumption note",
+        "Channel copy for the docs homepage and outbound email is present and each claim can be traced to a why-buy or feature row in the messaging document"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "fractional-cfo-service",
+      "prompt": "I run a fractional CFO practice called Northline for seed to Series A startups. What we do: monthly close and board-ready reporting within 10 business days; 13-week cash forecast updated weekly; fundraising model and data room prep; investor update drafting; hiring plan and comp benchmarking; we work in the client's existing tools (QuickBooks or Xero, Brex or Ramp, Carta); engagements are 2 days a week at $9,500 a month with a 3-month minimum; every client gets a named CFO plus a controller. Our best client is a technical founder who raised $3M, has never run a P&L, and dreads the board meeting. Our website reads like a list of services. We need a messaging framework and new homepage copy.",
+      "expected_output": "Messaging house for a service business built around the founder's jobs (get through the board meeting, know the runway), with pricing parked, and four-blade homepage copy derived from it.",
+      "assertions": [
+        "Output includes a customer profile with separate ranked lists of jobs, pains and gains for one real or composite named customer",
+        "Output includes a value map that pairs profile items with how the product answers them and rates fit",
+        "Three or four why-buys are named as customer outcomes in plain words, not as technologies or feature names",
+        "Every feature or fact supplied in the prompt appears in the messaging document under a why-buy or in a parking lot; none is dropped",
+        "No feature, number, integration or behaviour is claimed beyond what the prompt supplies (placeholders and stated assumptions are acceptable; extending a feature's behaviour is not)",
+        "A value proposition of four to five sentences is present that names the product exactly once and ends on an emotional outcome",
+        "The chat summary opens with the why-buys and the value proposition before any process or assumption note",
+        "The price itself sits in a pricing or parking-lot section, never in a column; if a pricing or engagement model is used as a why-buy it has at least three proofs of its own and the choice is stated in the assumptions",
+        "Homepage copy is structured as an intro (the value proposition) followed by one section per why-buy"
+      ]
+    }
+  ]
+}
